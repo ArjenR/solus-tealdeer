@@ -1,0 +1,19 @@
+name       : tealdeer
+version    : 1.1.0
+release    : 1
+source     :
+    - https://github.com/dbrgn/tealdeer/archive/v1.1.0.tar.gz : 647990936af527e9738e8befb432fdf8dd40e7b2ab0066afc652330fddd3dd0e
+license    : MIT
+component  : programming.tools
+homepage   : https://tldr.sh/
+summary    : Simplified man pages with practial examples
+description: |
+    The TLDR pages are a community effort to simplify the beloved man pages with practical examples.
+networking : yes
+builddeps  :
+    - cargo
+build      : |
+    cargo build --release
+install    : |
+    install -D -m 00755 $workdir/target/release/tldr $installdir/usr/bin/tldr
+    install -D -m 00644 $workdir/bash_tealdeer $installdir/usr/share/bash-completion/completions/tldr

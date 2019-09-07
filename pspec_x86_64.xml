@@ -1,0 +1,36 @@
+<PISI>
+    <Source>
+        <Name>tealdeer</Name>
+        <Homepage>https://tldr.sh/</Homepage>
+        <Packager>
+            <Name>Jacek Jagosz</Name>
+            <Email>jacek.jagosz@outlook.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>programming.tools</PartOf>
+        <Summary xml:lang="en">Simplified man pages with practial examples</Summary>
+        <Description xml:lang="en">The TLDR pages are a community effort to simplify the beloved man pages with practical examples.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>tealdeer</Name>
+        <Summary xml:lang="en">Simplified man pages with practial examples</Summary>
+        <Description xml:lang="en">The TLDR pages are a community effort to simplify the beloved man pages with practical examples.
+</Description>
+        <PartOf>programming.tools</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/tldr</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/tldr</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2019-07-18</Date>
+            <Version>1.1.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Jacek Jagosz</Name>
+            <Email>jacek.jagosz@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>
